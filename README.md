@@ -47,3 +47,9 @@ Keep in mind that this is just an example which assumes that there is a local ma
 https://ping.gg uses in production a configuration like the [redis example](https://github.com/pinggg/pingd/blob/master/examples/redis/cmd.go) allowing the website to interact with pingd via redis pub/sub.
 
 You can add your own functions to have pingd interact with the world. For example, switching on some red light with the help of a Raspberry Pi.
+#####################################################################
+pingd 是世界上最简单的监控服务，使用 golang 编写。软件支持 IPv6，但是服务器不支持。
+
+pingd 允许同时 ping 上千个 IPs，在此期间还可以管理监控的主机。
+
+用户提供主机名或者 IP，还有用户邮箱地址，就可以使用 3 个生成 URLs 来开启，停止或者删除你的追踪。每当你的服务器停机或者后台在线都会发送通知，还包含控制 URLs。
